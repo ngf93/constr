@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Строительная компания</title>
+</head>
+<body>
+    <header>
+        <div class="container h-100 d-flex justify-content-between align-items-center">
+            <a href="index.html">
+                <img src="imgs/logo.webp" alt="logo" class="logo">
+            </a>
+            <a href="vacancies.html" class="btn-border px-3 px-sm-4 px-md-5">
+                Хотите в команду?
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav-menu">
+        <div class="container h-100 d-flex justify-content-between align-items-stretch">
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasMenu">
+                <button type="button" class="offcanvas-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasMenu">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.116 8l-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z"></path>
+                    </svg>
+                </button>
+                <div class="offcanvas-body h-100">
+                    <ul class="menu h-100">
+                        <li class="hoverMenu">
+                            <div class="linkGroup">
+                                <a href="">
+                                    <span>Услуги</span>
+                                    <svg class="d-none d-lg-block ms-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </a>
+                                
+                                <button type="button" class="down" data-bs-toggle="collapse" data-bs-target="#collapseServices" aria-expanded="false">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul id="collapseServices" class="collapse hoverMenu_submenu">
+                                <li><a href="">Услуги генерального подрядчика</a></li>
+                                <li><a href="">Услуги генерального проектировщика</a></li>
+                                <li><a href="">Услуги технического заказчика</a></li>
+                                <li><a href="">Проектирование зданий и сооружений</a></li>
+                                <li><a href="">Строительство зданий под ключ</a></li>
+                                <li><a href="">Строительно-монтажные работы</a></li>
+                                <li><a href="">Производство металлоконструкций </a></li>
+                                <li><a href="">Производство сэндвич-панелей</a></li>
+                                <li><a href="">Дополнительное оборудование и комплектация зданий </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="projects.html">Наши проекты</a>
+                        </li>
+                        <li class="hoverMenu">
+                            <div class="linkGroup">
+                                <a href="about.html">
+                                    <span>О компании</span>
+                                    <svg class="d-none d-lg-block ms-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </a>
+                                <button type="button" class="down" data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul id="collapseAbout" class="collapse hoverMenu_submenu">
+                                <li><a href="manufacture.html">Наше производство</a></li>
+                                <li><a href="info.html">Полезная информация</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="social">
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCoR5DPIP9NvdVOoECX_pCGA?view_as=subscriber">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://t.me/iconstr">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" class="gamburger-menu d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <nav class="container mt-4 mb-4 mb-md-5" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">О компании</li>
+            </ol>
+        </nav>
+
+        <section class="container text-page">
+            <h1 class="h2">О компании</h1>
+            <p>Компания "Инновационные Конструкции" занимается проектированием и строительством "под ключ" объектов промышленного, спортивного и общественного назначения.</p>
+            <p>Компания начала деятельность в 2008 году, за время работы мы сформировали небольшую, но профессиональную команду единомышленников, способных решать любые поставленные задачи. С 2008 года реализовано более 100 объектов, сложность объектов возросла от небольших холодных складов до полноценных Спортивных комплексов и Производственных зданий.</p>
+            <p>В основе нашей миссии лежит стремление к максимальному результату, невзирая ни на какие сложности.</p>
+            <p>Репутация для нас играет первостепенное значение, для нас крайне важно, чтобы Клиент остался доволен. Поэтому только лучшее оборудование, надежные субподрядчики и поставщики, способные гарантировать качество, сроки и стоимость на всём протяжении выполнения проекта.</p>
+        </section>
+
+        <section class="container sec-plus">
+            <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                <div>
+                    <div class="h-100 bg-light p-4">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="m23.204,6.196c-.499-.277-1.087-.261-1.605.066l-5.599,4.233v-2.948c0-.57-.298-1.075-.796-1.352-.499-.276-1.086-.262-1.594.057l-5.61,3.988V1h.5c.276,0,.5-.224.5-.5s-.224-.5-.5-.5H.5C.224,0,0,.224,0,.5s.224.5.5.5h.5v18.5c0,2.481,2.019,4.5,4.5,4.5h14c2.481,0,4.5-2.019,4.5-4.5V7.547c0-.57-.298-1.075-.796-1.352Zm-.204,13.304c0,1.93-1.57,3.5-3.5,3.5H5.5c-1.93,0-3.5-1.57-3.5-3.5V1h5v18.5c0,.276.224.5.5.5s.5-.224.5-.5v-8.031l6.165-4.384c.246-.154.469-.062.554-.014.085.047.281.187.281.477v3.953c0,.19.107.363.277.448.168.084.372.065.524-.049l6.363-4.814c.246-.154.469-.062.554-.014.085.047.281.187.281.477v11.953Zm-9.5-3.5h-1c-.827,0-1.5.673-1.5,1.5v1c0,.827.673,1.5,1.5,1.5h1c.827,0,1.5-.673,1.5-1.5v-1c0-.827-.673-1.5-1.5-1.5Zm.5,2.5c0,.276-.225.5-.5.5h-1c-.275,0-.5-.224-.5-.5v-1c0-.276.225-.5.5-.5h1c.275,0,.5.224.5.5v1Zm5.5-2.5h-1c-.827,0-1.5.673-1.5,1.5v1c0,.827.673,1.5,1.5,1.5h1c.827,0,1.5-.673,1.5-1.5v-1c0-.827-.673-1.5-1.5-1.5Zm.5,2.5c0,.276-.225.5-.5.5h-1c-.275,0-.5-.224-.5-.5v-1c0-.276.225-.5.5-.5h1c.275,0,.5.224.5.5v1Z"/>
+                        </svg>
+                        <h6 class="text-center">Реализуем объекты "под ключ"</h6>
+                    </div>
+                </div>
+                <div>
+                    <div class="h-100 bg-light p-4">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="m3,9c0,3.309,2.691,6,6,6s6-2.691,6-6.002l-.007-1.998h.994v-1h-.998l-.002-.552c0-3.004-2.445-5.448-5.45-5.448h-1.1C5.432,0,2.987,2.445,2.987,5.452l.002.548h-1.002v1h1.006l.007,2Zm11,0c0,2.757-2.243,5-5,5s-5-2.243-5-5.002l-.007-1.998h10l.007,2ZM3.987,5.45c0-1.944,1.26-3.582,3-4.187v2.737h1V1.045c.15-.015.296-.045.45-.045h1.1c.154,0,.3.03.45.046v2.954h1V1.263c1.74.605,3,2.244,3,4.187l.002.55H3.989l-.002-.55Zm8.013,11.55h-7c-2.206,0-4,1.794-4,4v3H0v-3c0-2.757,2.243-5,5-5h7v1Zm5-3v3h-3v3h-3v4h13v-10h-7Zm1,1h5v2h-5v-2Zm-3,3h5v2h-5v-2Zm2,5h-5v-2h5v2Zm6,0h-5v-2h5v2Zm0-3h-2v-2h2v2Z"/>
+                        </svg>
+                        <h6 class="text-center">Проектируем и строим своими силами</h6>
+                    </div>
+                </div>
+                <div>
+                    <div class="h-100 bg-light p-4">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="m9,19h10v1h-10v-1Zm-7-.5v-5.569c-.614-.631-1-1.484-1-2.431,0-1.93,1.57-3.5,3.5-3.5s3.5,1.57,3.5,3.5c0,.947-.386,1.8-1,2.431v5.569l-2.5-1.875-2.5,1.875Zm4-4.851c-.456.219-.961.351-1.5.351s-1.044-.133-1.5-.351v2.851l1.5-1.125,1.5,1.125v-2.851Zm-4-3.149c0,1.379,1.122,2.5,2.5,2.5s2.5-1.121,2.5-2.5-1.122-2.5-2.5-2.5-2.5,1.121-2.5,2.5Zm7,5.5h10v-1h-10v1Zm10-5h-9.025c-.031.344-.096.677-.187,1h9.212v-1Zm5-3.707v16.707H4v-5h1v4h18v-15h-7V1H6.5c-.827,0-1.5.673-1.5,1.5v2.5h-1v-2.5c0-1.379,1.122-2.5,2.5-2.5h10.207l7.293,7.293Zm-1.707-.293l-5.293-5.293v5.293h5.293Z"/>
+                        </svg>
+                        <h6 class="text-center">15 лет в строительстве Более 100 объектов</h6>
+                    </div>
+                </div>
+                <div>
+                    <div class="h-100 bg-light p-4">
+                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="m12.815,14l.588-3.33q.023-.508,0-.533c-.121-.444-.402-.794-.791-.985-.394-.192-.848-.2-1.281-.02-.254.105-.502.367-.679.712l-2.196,4.155h-2.456c-1.103,0-2,.897-2,2v6c0,1.103.897,2,2,2h12.5l1.509-8.095-.009-1.905h-7.185Zm-7.815,8v-6c0-.551.449-1,1-1h2v8h-2c-.551,0-1-.449-1-1Zm12.67,1h-8.67v-8l2.54-4.694c.094-.184.182-.251.177-.251.164-.068.325-.07.455-.005.1.049.179.135.247.291l-.795,4.659h7.386l.009.815-1.348,7.185ZM9.16,7.638l.618.502,2.221-1.44,2.222,1.44.625-.48-.707-2.365,1.861-1.5v-.795h-2.683l-.92-2.626h-.794l-.92,2.626h-2.683v.795l1.861,1.5-.7,2.343Zm.687-3.638h1.544l.608-1.735.608,1.735h1.544l-1.164.938.449,1.502-1.438-.933-1.438.933.449-1.502-1.164-.938Zm-3.626,7.14l.625-.48-.707-2.365,1.861-1.5v-.795h-2.683l-.92-2.626h-.794l-.92,2.626H0v.795l1.861,1.5-.703,2.352.621.493,2.221-1.44,2.222,1.44ZM1.848,7h1.544l.608-1.735.608,1.735h1.544l-1.164.938.449,1.502-1.438-.933-1.438.933.449-1.502-1.164-.938Zm22.152-1h-2.683l-.92-2.626h-.794l-.92,2.626h-2.683v.795l1.861,1.5-.7,2.341.618.505,2.221-1.44,2.222,1.44.625-.48-.707-2.365,1.861-1.5v-.795Zm-3.011,1.938l.449,1.502-1.438-.933-1.438.933.449-1.502-1.164-.938h1.544l.608-1.735.608,1.735h1.544l-1.164.938Z"/>
+                        </svg>
+                        <h6 class="text-center">Дорожим репутацией</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container text-page">
+            <p>Мы специализируемся на создании инновационных быстровозводимых зданий из металлоконструкций, которые обеспечивают экономически эффективные решения по сравнению с традиционными сооружениями.</p>
+            <p>Компания "Инновационные Конструкции" готова взять на себя все функции по управлению проектом от создания эскизного проекта до ввода объекта в эксплуатацию, выступая в качестве Технического заказчика, Генерального проектировщика и Генерального подрядчика.</p>
+            <ul>
+                <li>Специализируемся на создании быстровозводимых зданий из металлоконструкций, обеспечивая экономически эффективные, современные решения.</li>
+                <li>Готовы работать по Строительным контрактам полного цикла с фиксированной ценой.</li>
+                <li>Осуществляем строительство на территории Центрального федерального округа Российской Федерации.</li>
+                <li>Выступаем как в роли технического заказчика, генпроектировщика и генподрядчика, так и простого подрядчика/субподрядчика на крупных объектах.</li>
+            </ul>
+
+            <div class="my-5 row gx-0 align-items-stretch">
+                <div class="d-none d-md-block col-md-4">
+                    <img src="imgs/project-shema.webp" alt="shema" class="w-100 h-100 object-fit-cover">
+                </div>
+                <div class="col-12 col-md-8 px-5 py-4 d-flex align-items-center bg-color">
+                    <h5>При разработке проектной документации нами используются: Российские стандарты (около 100 стандартов по направлениям), европейские стандарты безопасности ISO 9000, противопожарные нормы и другие актуальные нормативные документы.</h5>
+                </div>
+            </div>
+
+            <h2>ОСНОВНЫМИ НАПРАВЛЕНИЯМИ ДЕЯТЕЛЬНОСТИ КОМПАНИИ ЯВЛЯЮТСЯ:</h2>
+            <ul>
+                <li>
+                    <h4>РЕАЛИЗАЦИЯ ОБЪЕКТОВ «ПОД КЛЮЧ»</h4>
+                    <p>Полный комплекс работ по спортивным, промышленным и общественным объектам от дизайна и получения ИРД до оснащения и ввода в эксплуатацию, включая функцию Технического заказчика.</p>
+                </li>
+                <li>
+                    <h4>ПРОЕКТИРОВАНИЕ</h4>
+                    <p>Проектирование объектов различного назначения, включая функции Генпроектировщика.</p>
+                </li>
+                <li>
+                    <h4>СТРОИТЕЛЬСТВО</h4>
+                    <p>Строительство общественных и промышленных зданий, включая функции Генподрядчика.</p>
+                </li>
+                <li>
+                    <h4>МОНТАЖ ИНЖЕНЕРНЫХ СИСТЕМ</h4>
+                    <p>Полный комплекс по оснащению сооружений всеми необходимыми инженерными системами и оборудованием, а также специальным инвентарем.</p>
+                </li>
+                <li>
+                    <h4>ПРОИЗВОДСТВО МЕТАЛЛОКОНСТРУКЦИЙ</h4>
+                    <p>Для изготовления металлоконструкций на заказ конструкторским подразделением компании разрабатываются и подготавливаются подробные чертежи в строгом соответствии с требованиями ГОСТ и СНиП. В комплекте рабочих чертежей приводятся детализированные изображения каждого элемента, отдельных узлов и всей конструкции в сборе.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container">
+            <form action="" class="callback">
+                <h3>ОСТАВИТЬ ЗАЯВКУ</h3>
+                <p class="text-center fw-4 mb-4">Укажите контактный телефон, наш специалист перезвонит и проконсультирует бесплатно.</p>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-4 col-xl-3">
+                        <input type="text" class="form-control" placeholder="имя">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <input type="tel" class="form-control" placeholder="телефон">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <input type="email" class="form-control" placeholder="email">
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <button type="submit" class="btn-fill w-100">Отправить заявку</button>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center">Нажимая на кнопку отправить Вы соглашаетесь с правилами обработки персональных данных</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="container">
+            <h2>НАШИ КЛИЕНТЫ</h2>
+            <div class="position-relative px-sm-4 px-md-5">
+                <div class="swiper swiper-brands">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="imgs/logo.webp" alt="logo">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-md-block col-4 col-md-4">
+                    <ul class="list-unstyled menu">
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="projects.html">НАШИ ПРОЕКТЫ</a></li>
+                        <li><a href="info.html">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <button type="button" class="btn-border px-3 px-lg-4 mb-3 mx-auto mx-md-0">Заказать звонок</button>
+                    <a class="link d-block fs-12 fw-5 mb-2" href="tel:+70000000000">+7 000 000-00-00</a>
+                    <a class="link d-block fw-4 mb-2" href="mailto:info@iconstr.ru">info@iconstr.ru</a>
+                    <address>г. Москва, ул. Клары Цеткин, 31</address>
+                </div>
+                <div class="col-12 col-md-4 mt-4 mt-sm-5 mt-md-0 text-center text-md-start">
+                    <p>ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="social justify-content-center justify-content-md-start mt-lg-3">
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCoR5DPIP9NvdVOoECX_pCGA?view_as=subscriber">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://t.me/iconstr">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="info mt-md-3">© 2008-2024, г. ,
+                        <br/>ООО «» --
+                        <br/>Проектирование и строительство зданий
+                        <br/>ИНН  / ОГРН </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button type="button" class="btn-up btn-up__hide">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 244 144-144 144 144M256 120v292"></path></svg>
+    </button>
+
+    <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <form action="">
+                    <h3>ЗАКАЗАТЬ ЗВОНОК</h3>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="tel" class="form-control" placeholder="Ваш телефон">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="email" class="form-control" placeholder="Ваш email">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn-fill w-100">Отправить заявку</button>
+                        </div>
+                        <div class="col-12">
+                            <p class="fs-09 text-center">Нажимая на кнопку отправить Вы соглашаетесь с правилами обработки персональных данных</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

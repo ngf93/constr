@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Строительная компания</title>
+</head>
+<body>
+    <header>
+        <div class="container h-100 d-flex justify-content-between align-items-center">
+            <a href="index.html">
+                <img src="imgs/logo.webp" alt="logo" class="logo">
+            </a>
+            <a href="vacancies.html" class="btn-border px-3 px-sm-4 px-md-5">
+                Хотите в команду?
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav-menu">
+        <div class="container h-100 d-flex justify-content-between align-items-stretch">
+            <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasMenu">
+                <button type="button" class="offcanvas-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasMenu">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.116 8l-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z"></path>
+                    </svg>
+                </button>
+                <div class="offcanvas-body h-100">
+                    <ul class="menu h-100">
+                        <li class="hoverMenu">
+                            <div class="linkGroup">
+                                <a href="">
+                                    <span>Услуги</span>
+                                    <svg class="d-none d-lg-block ms-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </a>
+                                
+                                <button type="button" class="down" data-bs-toggle="collapse" data-bs-target="#collapseServices" aria-expanded="false">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul id="collapseServices" class="collapse hoverMenu_submenu">
+                                <li><a href="">Услуги генерального подрядчика</a></li>
+                                <li><a href="">Услуги генерального проектировщика</a></li>
+                                <li><a href="">Услуги технического заказчика</a></li>
+                                <li><a href="">Проектирование зданий и сооружений</a></li>
+                                <li><a href="">Строительство зданий под ключ</a></li>
+                                <li><a href="">Строительно-монтажные работы</a></li>
+                                <li><a href="">Производство металлоконструкций </a></li>
+                                <li><a href="">Производство сэндвич-панелей</a></li>
+                                <li><a href="">Дополнительное оборудование и комплектация зданий </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="projects.html">Наши проекты</a>
+                        </li>
+                        <li class="hoverMenu">
+                            <div class="linkGroup">
+                                <a href="about.html">
+                                    <span>О компании</span>
+                                    <svg class="d-none d-lg-block ms-2" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </a>
+                                <button type="button" class="down" data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 184 144 144 144-144"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul id="collapseAbout" class="collapse hoverMenu_submenu">
+                                <li><a href="manufacture.html">Наше производство</a></li>
+                                <li><a href="info.html">Полезная информация</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="social">
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCoR5DPIP9NvdVOoECX_pCGA?view_as=subscriber">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://t.me/iconstr">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" class="gamburger-menu d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <nav class="container mt-4 mb-4 mb-md-5" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item"><a href="about.html">О компании</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Наше производство</li>
+            </ol>
+        </nav>
+
+        <section class="container text-page">
+            <h1 class="h2">НАШЕ ПРОИЗВОДСТВО</h1>
+            <p>Для изготовления металлоконструкций на заказ конструкторским подразделением компании разрабатываются и подготавливаются подробные чертежи в строгом соответствии с требованиями ГОСТ и СНиП. В комплекте рабочих чертежей приводятся детализированные изображения каждого элемента, отдельных узлов и всей конструкции в сборе.</p>
+            <p>Мы производим металлоконструкции на собственном производстве под строгим многоуровневым контролем. Осуществляем поставки материалов и оборудования, гарантируем соблюдение высоких стандартов и сроков изготовления. Производство располагается в г.Липецк. Производим металлоконструкции в строгом соответствии с проектной документацией. Осуществляем поставку металлоконструкций с монтажом на объектах в Москве и Московской области.</p>
+            <div class="row row-cols-1 row-cols-lg-2 g-4 mb-4">
+                <div>
+                    <img class="img-fluid" src="imgs/proizv1.webp" alt="Производство">
+                </div>
+                <div>
+                    <img class="img-fluid" src="imgs/proizv2-2.webp" alt="Производство">
+                </div>
+            </div>
+
+            <div class="sec-plus my-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                    <div>
+                        <div class="h-100 bg-light p-4">
+                            <h3 class="fw-8 text-center">15 лет</h3>
+                            <h6 class="text-center">производим металлоконструкции для строительной отрасли</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-100 bg-light p-4">
+                            <h3 class="fw-8 text-center">3000 м²</h3>
+                            <h6 class="text-center">общая площадь производственных цехов в Липецке</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-100 bg-light p-4">
+                            <h3 class="fw-8 text-center">30 человек</h3>
+                            <h6 class="text-center">высококвалифицированных сотрудников работает на постоянной основе</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-100 bg-light p-4">
+                            <h3 class="fw-8 text-center">500 тонн</h3>
+                            <h6 class="text-center">металлоконструкций производим каждый месяц</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li>Производим непрерывный контроль качества над всеми этапами</li>
+                <li>Разработаем проект или поможем рассчитать смету по готовому</li>
+                <li>Используем современное высококачественное оборудование покрасочной камеры</li>
+            </ul>
+
+            <div class="row row-cols-1 row-cols-lg-2 g-4 my-5">
+                <div>
+                    <img class="img-fluid" src="imgs/proizv3-1.webp" alt="Производство">
+                </div>
+                <div>
+                    <img class="img-fluid" src="imgs/proizv4-1.webp" alt="Производство">
+                </div>
+            </div>
+
+            <h4>Как заказать металлоконструкции</h4>
+            <ol>
+                <li>
+                    <h5>РАСЧЕТ ЗАКАЗА</h5>
+                    <p>Подготовим коммерческое предложение по Вашему техническому заданию в течении 1 рабочего дня.</p>
+                </li>
+                <li>
+                    <h5>ПРОЕКТИРОВАНИЕ</h5>
+                    <p>Оказываем комплексные услуги по проектированию металлоконструкций любой сложности.</p>
+                </li>
+                <li>
+                    <h5>ИЗГОТОВЛЕНИЕ</h5>
+                    <p>Производим металлоконструкции в строгом соответствии с проектной документацией.</p>
+                </li>
+                <li>
+                    <h5>МОНТАЖ</h5>
+                    <p>Доставляем металлические конструкции на объект и осуществляем монтаж силами наших бригад.</p>
+                </li>
+            </ol>
+
+            <button type="button" class="btn-fill my-5 mx-auto" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</button>
+
+            <h4>Доставка по ЦФО РФ</h4>
+            <p>Погрузка продукции завода осуществляется в грузовые автомашины с боковой и верхней загрузкой. Металлоконструкции увязываются в пачки стальной проволокой. Возможна доставка железнодорожным транспортом в полувагонах.</p>
+            <div class="box">
+                <ul>
+                    <li>Доставка грузовыми автомашинами</li>
+                    <li>Доставка ж/д транспортом</li>
+                </ul>
+                <img src="imgs/maprf.svg" alt="map" class="img-fluid d-block mx-auto">
+                <button type="button" class="btn-border mt-5 mx-auto" data-bs-toggle="modal" data-bs-target="#townsModal">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144zm0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64z"></path>
+                    </svg>
+                    <span class="ms-2">Список городов</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-md-block col-4 col-md-4">
+                    <ul class="list-unstyled menu">
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="projects.html">НАШИ ПРОЕКТЫ</a></li>
+                        <li><a href="info.html">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <button type="button" class="btn-border px-3 px-lg-4 mb-3 mx-auto mx-md-0">Заказать звонок</button>
+                    <a class="link d-block fs-12 fw-5 mb-2" href="tel:+70000000000">+7 000 000-00-00</a>
+                    <a class="link d-block fw-4 mb-2" href="mailto:info@iconstr.ru">info@iconstr.ru</a>
+                    <address>г. Москва, ул. Клары Цеткин, 31</address>
+                </div>
+                <div class="col-12 col-md-4 mt-4 mt-sm-5 mt-md-0 text-center text-md-start">
+                    <p>ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="social justify-content-center justify-content-md-start mt-lg-3">
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCoR5DPIP9NvdVOoECX_pCGA?view_as=subscriber">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://t.me/iconstr">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="info mt-md-3">© 2008-2024, г. ,
+                        <br/>ООО «» --
+                        <br/>Проектирование и строительство зданий
+                        <br/>ИНН  / ОГРН </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button type="button" class="btn-up btn-up__hide">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m112 244 144-144 144 144M256 120v292"></path></svg>
+    </button>
+
+    <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <form action="">
+                    <h3>ЗАКАЗАТЬ ЗВОНОК</h3>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="tel" class="form-control" placeholder="Ваш телефон">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="email" class="form-control" placeholder="Ваш email">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn-fill w-100">Отправить заявку</button>
+                        </div>
+                        <div class="col-12">
+                            <p class="fs-09 text-center">Нажимая на кнопку отправить Вы соглашаетесь с правилами обработки персональных данных</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="townsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 fs-09">
+                        <div>Москва и Московская область</div>
+                        <div>Балашиха</div>
+                        <div>Подольск</div>
+                        <div>Химки</div>
+                        <div>Мытищи</div>
+                        <div>Королев</div>
+                        <div>Люберцы</div>
+                        <div>Красногорск</div>
+                        <div>Электросталь</div>
+                        <div>Коломна</div>
+                        <div>Домодедово</div>
+                        <div>Одинцово</div>
+                        <div>Серпухов</div>
+                        <div>Щёлково</div>
+                        <div>Раменское</div>
+                        <div>Орехово-Зуево</div>
+                        <div>Долгопрудный</div>
+                        <div>Реутов</div>
+                        <div>Пушкино</div>
+                        <div>Жуковский</div>
+                        <div>Ногинск</div>
+                        <div>Сергиев Посад</div> <div>Воскресенск</div> <div>Лобня</div> <div>Ивантеевка</div> <div>Клин</div> <div>Видное</div> <div>Дубна</div> <div>Егорьевск</div> <div>Чехов</div> <div>Дмитров</div> <div>Ступино</div> <div>Наро-Фоминск</div> <div>Павловский Посад</div> <div>Фрязино</div> <div>Лыткарино</div> <div>Дзержинский</div> <div>Солнечногорск</div> <div>Котельники</div> <div>Кашира</div> <div>Краснознаменск</div> <div>Протвино</div> <div>Истра</div> <div>Шатура</div> <div>Апрелевка</div> <div>Дедовск</div> <div>Луховицы</div> <div>Можайск</div> <div>Ликино-Дулёво</div> <div>Красноармейск</div> <div>Лосино-Петровский</div> <div>Озёры</div> <div>Старая Купавна</div> <div>Зарайск</div> <div>Электрогорск</div> <div>Бронницы</div> <div>Звенигород</div> <div>Хотьково</div> <div>Черноголовка</div> <div>Электроугли</div> <div>Пущино</div> <div>Куровское</div> <div>Кубинка</div> <div>Рошаль</div> <div>Волоколамск</div> <div>Голицыно</div> <div>Яхрома</div> <div>Пересвет</div> <div>Краснозаводск</div> <div>Руза</div> <div>Талдом</div> <div>Дрезна</div> <div>Высоковск</div> <div>Верея</div> <div>Брянск</div> <div>Владимир</div> <div>Воронеж</div> <div>Иваново</div> <div>Калуга</div> <div>Кострома</div> <div>Курск</div> <div>Липецк</div> <div>Орёл</div> <div>Рязань</div> <div>Смоленск</div> <div>Тамбов</div> <div>Тверь</div> <div>Тула</div> <div>Ярославль</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
